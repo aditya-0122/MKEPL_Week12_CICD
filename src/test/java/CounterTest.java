@@ -38,7 +38,7 @@ public class CounterTest {
 			assertEquals(testCounter.getCount(), i * -1);
 		}
 	}
-
+	
 	@Test
 	public void testPowerBy() {
 		Counter testCounter = new Counter();

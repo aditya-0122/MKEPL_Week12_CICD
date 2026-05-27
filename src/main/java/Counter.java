@@ -38,7 +38,7 @@ public class Counter {
 	}
 
 	public void powerBy(int i){
-		count = (int)Math.pow(count, i);
+		count = (int) Math.pow(count, i);
 	}
 	
 	public boolean isCountEven(){
