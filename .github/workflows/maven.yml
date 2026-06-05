@@ -26,7 +26,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Build, Test, and Analyze with SonarCloud
+    - name: Build, Test, and Analyze with SonarCloud (Tahap CI)
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
@@ -36,3 +36,9 @@ jobs:
         -Dsonar.host.url=https://sonarcloud.io \
         -Dsonar.organization=aditya-0122 \
         -Dsonar.projectKey=aditya-0122_MKEPL_Week12_CICD
+
+    - name: Upload Artifact (Tahap Simulasi CD/Deployment)
+      uses: actions/upload-artifact@v4
+      with:
+        name: rilis-aplikasi-java
+        path: target/*.jar
