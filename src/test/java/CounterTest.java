@@ -49,4 +49,14 @@ public class CounterTest {
 		assertEquals(testCounter.getCount(), 8);
 	}
 
+	@Test
+	public void testDoubleCount() {
+		Counter testCounter = new Counter();
+		
+		testCounter.increaseBy(2);
+		testCounter.doubleCount();
+		
+		assertEquals(testCounter.getCount(), 4);
+	}
+
 }
