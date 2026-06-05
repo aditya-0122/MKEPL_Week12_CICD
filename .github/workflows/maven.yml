@@ -42,9 +42,4 @@ jobs:
       with:
         name: rilis-aplikasi-java
         path: target/*.jar
-
-    - name: Upload Artifact (Tahap Simulasi CD/Deployment)
-      uses: actions/upload-artifact@v4
-      with:
-        name: rilis-aplikasi-java
-        path: target/*.jar
+        overwrite: true
